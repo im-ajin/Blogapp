@@ -34,3 +34,6 @@ body{
 .dark .post-content a{
     color: red;
 }
+.borderr{
+    border: 2px solid red;
+}
