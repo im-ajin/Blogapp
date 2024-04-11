@@ -32,7 +32,6 @@ const DashProfile = () => {
       setImageFileUrl(URL.createObjectURL(file));
     }
     };
-    //console.log(imageFile, imageFileUrl);
 
     useEffect(() => {
       if(imageFile){

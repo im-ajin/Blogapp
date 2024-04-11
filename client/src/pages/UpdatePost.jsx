@@ -25,7 +25,7 @@ const UpdatePost = () => {
   const { postId } = useParams();
   const { currentUser } = useSelector(state => state.user)
  
-   console.log(formData);
+ 
 
   useEffect(() => {
     
@@ -104,7 +104,6 @@ const UpdatePost = () => {
 
       if (res.ok) {
         setPublishError(null);
-        console.log(data);
         navigate(`/post/${data.slug}`);
       }
     } catch (error) {

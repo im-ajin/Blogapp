@@ -14,7 +14,7 @@ const DashPosts = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-        console.log('mmm');
+        
       try {
         const res = await fetch(`api/post/getposts?userId=${currentUser._id}`);
         const data = await res.json();
@@ -89,7 +89,7 @@ const DashPosts = () => {
               </Table.HeadCell>
             </Table.Head>
             {userPosts.map((post) => (
-              <Table.Body className="divide-y">
+              <Table.Body className="divide-y" key={post._id}>
                 <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
                   <Table.Cell>
                     {new Date(post.updatedAt).toLocaleDateString()}

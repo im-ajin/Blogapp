@@ -16,16 +16,14 @@ const Home = () => {
   },[])
   return (
     <div>
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcom to my blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae expedita, nisi quo harum architecto rem aliquid ex?</p>
+      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto min-h-[90vh] justify-center'>
+        <h1 className='text-3xl font-bold lg:text-6xl'>Welcom to My Blog</h1>
+        <p className='text-gray-500 text-xs sm:text-sm'>Share Your Thoughts Here</p>
         <Link to='/search' className='text-xs sm:text-sm text-teal-500 hover:underline'>
           View all posts
         </Link>
       </div>
-      <div className='p-3 bg-amber-100 dark:bg-slate-700'>
-        <CallToAction />
-      </div>
+      
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
           {
             posts && posts.length > 0 && (
